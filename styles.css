@@ -8,17 +8,18 @@
 
 body{
     background-color:#EED7C5;
+    height: 100vh;
 }
   
 main {
     padding: 3rem;
     color:#B36A5E;
-    height: 100vh;
+    
 }
   
 h1 {
     font-size: 3rem;
-    margin-top: 3em;
+    margin-top: .8em;
     margin-bottom: 0.8em;
 }
 
@@ -50,20 +51,16 @@ h2 h3{
 .botao-submit:hover{
     background-color: #EEE2DF ;
     color:#B36A5E;
+    border: .2em solid #B36A5E;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
 }
 
   
 input{
     height: 2rem;
     margin: 0.7rem;
-    border: 0;
-    border-radius: 0.5rem; 
-}
-
-textarea{
-    height: 11em;
-    margin: 0.7rem;
-    border: 0;
+    border: .2em solid #B36A5E;
     border-radius: 0.5rem; 
 }
 
@@ -71,8 +68,23 @@ input:focus {
     outline: none; 
 }
 
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea{
+    height: 11em;
+    margin: 0.7rem;
+    border: .2em solid #B36A5E;
+    border-radius: 0.5rem; 
+}
+
 textarea:focus{
     outline: none;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
 }
   
   

@@ -8,10 +8,6 @@ botao.addEventListener('click', criarCard)
 function criarCard(e){
     e.preventDefault()
 
-    let h2 = document.createElement('h2')
-    h2.innerText = 'Veja seus cards'
-    document.querySelector('div').appendChild(h2)
-
     let h3 = document.createElement('h3')
     h3.innerText = tituloForm.value 
     document.querySelector('div').appendChild(h3)
@@ -23,5 +19,5 @@ function criarCard(e){
     let img = document.createElement('img')
     img.setAttribute('src', linkImagem.value)
     document.querySelector('div').appendChild(img)
-    
+
 }
