@@ -22,11 +22,29 @@
 
             <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Escreva um parágrafo explicativo sobre o ponto turístico que você deseja criar o card"></textarea>
 
-            <input type="submit" value="Criar card" id="botao" class="botao-submit">
+            <div class="flex-div">
+                <label for="localizacao">Região do ponto turístico</label>
+                <input type="radio" name="regiao" value="centro">Centro</input>
+                <input type="radio" name="regiao" value="sul">Sul</input>
+                <input type="radio" name="regiao" value="norte">Norte</input>
+                <input type="radio" name="regiao" value="leste">Leste</input>
+                <input type="radio" name="regiao" value="oeste" checked>Oeste</input>
+            </div>
+
+            <div class="flex-div">
+                <input type="checkbox" name="visitacao" id="visitacao"> Já visitei o ponto turístico</input>
+                
+            </div>
+
+            <input type="submit" value="Criar card" id="botao" class="botao-submit"> 
+
+           
         </form>
 
         
-        <div></div>
+        <div class="card"></div>
+        <div class="regiao"></div>
+        <div class="imagem"></div>
 
         
         <script src="script.js"></script>
